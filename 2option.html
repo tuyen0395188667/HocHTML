@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hoc HTML-CSS</title>
+    <meta http-equiv="Content-Tpye" content="text/html; charset=UTF-8">
+
+</head>
+
+<body> 
+    <!-- sử dụng option để tạo các tùy chọn trong danh sách các khóa học tại freetuts.net -->
+    <!--    
+        <select>
+        <option>PHP</option>
+        <option>Javascript</option>
+        <option>HTML-CSS</option>
+        <option>Database</option>
+        <option>Lập trình mobile</option>
+        </select> 
+    -->
+<form>
+    <!--  sử dụng thuộc tính value và selected của thẻ option. khi submit sẽ alert ra giá trị của select. -->
+    <select id="select">
+        <option value="php">PHP</option>
+        <option value="js">Javascript</option>
+        <option value="html/css" selected="selected">HTML-CSS</option>
+        <option value="db">Database</option>
+        <option value="mobile">Lập trình mobile</option>
+    </select>
+    <input type="submit" name="Submit" onclick='alert(document.getElementById("select").value)'>
+</form>
+</body>
+
+</html> 
+<!-- 
+    Thuoc tinh cua the option
+    disabled - vô hiệu hóa option, nó vẫn sẽ hiển thị nhưng không cho người dùng chọn.
+    label - đặt một label ngắn cho option.
+    selected - nếu option nào có thuộc tính này, nó sẽ là giá tị mặc định được chọn sau khi tải trang.
+    value - giá trị của option, cũng là giá trị của select nếu option đó được chọn
+-->

@@ -1,0 +1,51 @@
+<!-- 
+    Thẻ input có chức năng tạo một trường để người dùng có thể nhập dữ liệu đầu vào.
+    Thẻ input được sử dụng cùng với thẻ form để khai báo điều khiển đầu vào cho phép người dùng nhập dữ liệu.
+    Một trường input có thể thay đổi theo nhiều cách, phụ thuộc vào thuộc tính truyền vào.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <form>
+        <h1> Login </h1>
+        Username: <input type="text" name="username">
+        <br />
+        Password: <input type="passwword" name="passwword">
+        <br />
+        <input type="submit" name="submit" value="Login">
+    </form>
+
+    <!-- 
+        Thuoc tinh cua the input
+        1.Thuộc tính type
+            Type là thuộc tính quan trọng nhất của thẻ input, nó sẽ quy định tính năng của thẻ input đó.
+            Một số giá trị của type:
+                text: trường nhập văn bản.
+                password: trường nhập mật khẩu, các kí tự nhập sẽ bị che đi bằng các kí tự *.
+                checkbox: ô checkbox.
+                submit: nút nhấn để submit form.
+        2.Thuộc tính value
+            Value cũng là một thuộc tính rất quan trọng của thẻ input, nó quy định giá trị của thẻ input
+     -->
+     <!-- thuộc tính value của thẻ input -->
+     <br/>
+     <form>
+        <h1> Login </h1>
+        Username: <input type="text" name="username" value="Nhập username" >
+        <br/>
+        Password: <input type="passwword" name="passwword" value="Nhập password">
+        <br/>
+        <input type="submit" name="submit" value="Đăng Nhập">
+    </form>
+</body>
+
+</html>
